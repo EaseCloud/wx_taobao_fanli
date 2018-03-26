@@ -86,7 +86,7 @@ def check_if_is_tb_link(msg):
 请复制%s淘口令、打开淘宝APP下单
 -----------------
 【下单地址】%s
-                ''' % (q, fx, coupon_amount, coupon_token, short_link)
+                ''' % (q, fx*.4, coupon_amount, coupon_token, short_link)
             # res_text = u'''%s
             # 【优惠券】%s元
             # 请复制%s淘口令、打开淘宝APP下单
@@ -107,7 +107,7 @@ def check_if_is_tb_link(msg):
 请复制%s淘口令、打开淘宝APP下单
 -----------------
 【下单地址】%s
-                                ''' % (q, fx, coupon_amount, tao_token, short_link)
+                                ''' % (q, fx*.4, coupon_amount, tao_token, short_link)
             msg.user.send(res_text)
         except Exception as e:
             trace = traceback.format_exc()
