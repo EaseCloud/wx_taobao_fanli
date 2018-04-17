@@ -2,3 +2,5 @@ cookies.txt
 itchat.pkl
 *.pyc
 *.log
+
+/.idea
